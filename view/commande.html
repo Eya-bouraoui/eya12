@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Page produit - TunisieAuthentique">
+    <meta name="author" content="TunisieAuthentique">
+
+    <title>Produit - TunisieAuthentique</title>
+
+    <!-- Fichiers CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/templatemo-festava-live.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-person custom-icon me-2"></i>
+                        <strong class="text-dark">Bienvenue sur TunisieAuthentique</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html">Accueil</a>
+                    </li>
+                    
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Commande -->
+     <section class="order">
+       
+        
+        <!-- Informations sur le produit -->
+        <div class="order-product">
+            <img src="../media/product1.png" alt="Produit 1">
+            <div class="product-info">
+                <h3>Bijou Traditionnel</h3>
+                <p>Un magnifique bijou fabriqué à la main.</p>
+                <p><strong>Prix : </strong><span id="product-price">150 TND</span></p>
+            </div>
+        </div>
+
+        <!-- Sélection de la quantité -->
+        <div class="quantity">
+            <label for="quantity">Quantité :</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" onchange="updatePrice()">
+        </div>
+
+        <!-- Prix total -->
+        <div class="total">
+            <p><strong>Total : </strong><span id="total-price">150 TND</span></p>
+        </div>
+
+        <!-- Ajouter au panier -->
+        <button class="add-to-cart" onclick="addToCart()">Ajouter au panier</button>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">TunisieAuthentique</h2>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
